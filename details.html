@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh; 
+        }
+        .bac {
+            height: 12vh;
+            background-color: #082e34;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .middle {
+            flex-grow: 1; 
+            background-color: #5BB3C7; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; /* Added to align buttons horizontally */
+        }
+    </style>
+</head>
+<body>
+    <div class="bac"><h1>Task Details</h1></div>
+    <div class="middle">
+        <div class="d-flex justify-content-center">
+            <div class="card" style="width: 15rem; height: 18rem; text-align: center; background-color: white;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" >Task Name</li>
+                    <li class="list-group-item">Full Description</li>
+                    <li class="list-group-item">steps needed <ol>
+                        <li>step one</li>
+                        <li>step two</li>
+                    </ol>
+                        
+                    </li>
+                    <li class="list-group-item">Status and date due</li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between mt-3" style="width: 15rem;">
+            <button type="button" class="btn btn-primary">Edit</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+</body>
+</html>
